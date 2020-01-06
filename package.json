@@ -1,0 +1,33 @@
+{
+  "name": "fd-proxy-server",
+  "version": "1.0.0",
+  "description": "fec proxy by felix ding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./proxy/",
+    "build": "webpack -mode=production",
+    "build:dev": "webpack -d -w",
+    "stress-test": "artillery run stresstest.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Alpha-HRSF124/FD-proxy-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team-Alpha-HRSF124/FD-proxy-server/issues"
+  },
+  "homepage": "https://github.com/Team-Alpha-HRSF124/FD-proxy-server#readme",
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^0.20.0",
+    "nodemon": "^2.0.1",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "newrelic": "^6.2.0"
+  }
+}

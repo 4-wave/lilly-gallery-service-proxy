@@ -1,0 +1,12 @@
+config:
+  target: "http://localhost:8080/airbnb/listings/12"
+  phases:
+    - duration: 60
+      arrivalRate: 100
+      name: "Warm up the application"
+scenarios:
+  - flow:
+      - loop:
+          - get:
+              url: "http://localhost:8080/airbnb/listings/12"
+        count: 1000
